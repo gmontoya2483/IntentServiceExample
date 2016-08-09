@@ -16,6 +16,7 @@ import com.example.montoya.intentserviceexample.Services.MiService;
 public class MainActivityFragment extends Fragment {
 
     private Button mStartService;
+    private Button mScheduleService;
 
     public MainActivityFragment() {
     }
@@ -30,13 +31,35 @@ public class MainActivityFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView =inflater.inflate(R.layout.fragment_main, container, false);
 
+
+        //
         mStartService=(Button)rootView.findViewById(R.id.btnStartService);
+        mScheduleService=(Button) rootView.findViewById(R.id.btnScheduleService);
+
+
+
+
+        // Listeners
         mStartService.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startService();
             }
         });
+
+
+
+        mScheduleService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+
+
+
+            }
+        });
+
 
 
 
@@ -63,6 +86,9 @@ public class MainActivityFragment extends Fragment {
 
 
     }
+
+
+
 
 
 
